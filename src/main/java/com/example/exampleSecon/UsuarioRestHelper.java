@@ -13,6 +13,6 @@ public class UsuarioRestHelper {
     }
 
     public UsuarioBO obtenerUsuario(Long id) {
-        return restTemplate.getForObject("http://localhost:8090/data/" + id, UsuarioBO.class);
+        return restTemplate.getForObject("http://localhost:8090/api/data/" + id, UsuarioBO.class);
     }
 }
