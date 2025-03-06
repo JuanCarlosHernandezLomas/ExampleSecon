@@ -27,8 +27,20 @@ dependencies {
 	annotationProcessor 'org.mapstruct:mapstruct-processor:1.5.5.Final'
 	runtimeOnly 'com.mysql:mysql-connector-j'
 	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.0.2'
+	// Testing: JUnit 5 y Mockito
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'org.mockito:mockito-core'
+	testImplementation 'org.mockito:mockito-junit-jupiter'
+	testImplementation 'org.junit.jupiter:junit-jupiter-api'
+	testImplementation 'org.junit.jupiter:junit-jupiter-engine'
+
+	// Pruebas para Spring MVC (MockMvc)
+	testImplementation 'org.springframework.boot:spring-boot-starter-webflux'
+
+	// Pruebas para RestTemplate
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'com.fasterxml.jackson.core:jackson-databind'
+
 }
 dependencyManagement {
 	imports {

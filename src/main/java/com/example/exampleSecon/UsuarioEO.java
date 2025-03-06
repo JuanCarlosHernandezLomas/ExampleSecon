@@ -13,7 +13,7 @@ public class UsuarioEO {
     private Long id;
 
     @NotBlank(message = "El nombre no puede estar vacío")
-    private String nombre;
+    private String name;
 
     @Min(value = 18, message = "La edad mínima es 18")
     @Max(value = 99, message = "La edad máxima es 99")
@@ -29,12 +29,12 @@ public class UsuarioEO {
         this.id = id;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getName() {
+        return name;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setNombre(String name) {
+        this.name = name;
     }
 
     public int getEdad() {

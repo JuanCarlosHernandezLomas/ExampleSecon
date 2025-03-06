@@ -2,7 +2,7 @@ package com.example.exampleSecon;
 
 public class UsuarioBO {
     private Long id;
-    private String nombre;
+    private String name;
     private int edad;
 
     // Getters y Setters
@@ -15,12 +15,12 @@ public class UsuarioBO {
         this.id = id;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getName() {
+        return name;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public int getEdad() {
